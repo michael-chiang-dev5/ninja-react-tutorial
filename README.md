@@ -20,10 +20,18 @@ Implements project described in net ninja's youtube series (https://www.youtube.
 ## Notes
 
 ### Video 1
-`$ npx create-react-app APPNAME` to create a new react app
+* `$ npx create-react-app APPNAME` to create a new react app
 
 ### Video 2
-Emmet shortcuts: You can use `div.CLASSNAME` to generate `<div class=CLASSNAME></div>
+* Emmet shortcuts: You can use `div.CLASSNAME` to generate `<div class=CLASSNAME></div>
 
 ### Video 4
-React will automatically convert primities (strings, numbers) into text but cannot handle objects
+* React will automatically convert strings, numbers, arrays into text but cannot handle objects
+* Curly braces for dynamic values. Dynamic values do not require quotation marks, ie, `<div className={VAR}>` not `<div className="{VAR}">`
+
+### Video 5
+* react shortcut: `sfc`--> tab gets converted into a "stateless functional component"
+
+### Video 6
+* css files get applied to the entire page, even if they are imported into a single component.
+* One way to do things is just use index.css as a global css file
