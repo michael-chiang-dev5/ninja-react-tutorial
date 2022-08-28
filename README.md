@@ -40,3 +40,10 @@ Implements project described in net ninja's youtube series (https://www.youtube.
 * Click events
 * You can clear the firefox console by clicking the garbage can
 * If you need to pass a callback with an argument, wrap it in an anonymous function
+
+### Video 8
+#### useState hook
+* `const [name, setName] = useState('mario')`
+  * `[name, setName]` is an example of array destructuring that allows you to get multiple return values
+  * `name` is the name of the variable
+  * `setName` is a setter function that lets you assign `name` to a value. Whenever setName is called, it re-renders component
