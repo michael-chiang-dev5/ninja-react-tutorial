@@ -35,3 +35,8 @@ Implements project described in net ninja's youtube series (https://www.youtube.
 ### Video 6
 * css files get applied to the entire page, even if they are imported into a single component.
 * One way to do things is just use index.css as a global css file
+
+### Video 7
+* Click events
+* You can clear the firefox console by clicking the garbage can
+* If you need to pass a callback with an argument, wrap it in an anonymous function
