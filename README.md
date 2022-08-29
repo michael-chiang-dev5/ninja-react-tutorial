@@ -47,3 +47,9 @@ Implements project described in net ninja's youtube series (https://www.youtube.
   * `[name, setName]` is an example of array destructuring that allows you to get multiple return values
   * `name` is the name of the variable
   * `setName` is a setter function that lets you assign `name` to a value. Whenever setName is called, it re-renders component
+
+### Video 9
+React Dev Tools is a plugin for firefox/chrome
+
+### Video 10
+Use the map function to display lists within component return
