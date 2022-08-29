@@ -10,7 +10,8 @@ const Home = () => {
     const [blogs, setBlogs] = useState(arrBlogs)
     return (
         <div className="home">
-            <BlogList blogs={arrBlogs} title='All blogs' />
+            <BlogList blogs={blogs} title='All blogs' />
+            <BlogList blogs={blogs.filter( (e)=>e.author==='mario')} title="Mario's blogs" />            
         </div>
      );
 }
