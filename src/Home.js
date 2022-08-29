@@ -8,9 +8,13 @@ const Home = () => {
         { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
       ];
     const [blogs, setBlogs] = useState(arrBlogs)
+    const handleDelete = (id) => {
+        const newBlogs = blogs.filter((e)=>e.id!==id);
+        setBlogs(newBlogs);
+    }
     return (
         <div className="home">
-            <BlogList blogs={blogs} title='All blogs' />
+            <BlogList blogs={blogs} title='All blogs' handleDelete={handleDelete} />
             <BlogList blogs={blogs.filter( (e)=>e.author==='mario')} title="Mario's blogs" />            
         </div>
      );

@@ -59,3 +59,7 @@ Use the map function to display lists within component return
 * You can pass props via destructuring
   * `const BlogList = (props) => {}` is an example of props
   * `const BlogList = ({blogs, title})` is an example of destructuring
+
+### Video 12 - filter
+
+### Video 13 - functions as rpops
