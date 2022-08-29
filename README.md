@@ -53,3 +53,9 @@ React Dev Tools is a plugin for firefox/chrome
 
 ### Video 10
 Use the map function to display lists within component return
+
+### Video 11
+* Use props to abstract BlogList
+* You can pass props via destructuring
+  * `const BlogList = (props) => {}` is an example of props
+  * `const BlogList = ({blogs, title})` is an example of destructuring
