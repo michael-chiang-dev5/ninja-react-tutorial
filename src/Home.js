@@ -12,11 +12,13 @@ const Home = () => {
         const newBlogs = blogs.filter((e)=>e.id!==id);
         setBlogs(newBlogs);
     }
-    useEffect( ()=>console.log('rendering') )
+    const [name, setName] = useState('mario')
+    useEffect( ()=>console.log('use effect ran') , [name])
 
     return (
         <div className="home">
             <BlogList blogs={blogs} title='All blogs' handleDelete={handleDelete} />
+            <button onClick={()=>setName('luigi')}>change name</button>
             <BlogList blogs={blogs.filter( (e)=>e.author==='mario')} title="Mario's blogs" />            
         </div>
      );

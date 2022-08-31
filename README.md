@@ -66,4 +66,10 @@ Use the map function to display lists within component return
 
 ### Video 14
 #### useEffect hook
-Runs a function every render of the componenet
+Runs a function every render of the component
+`useEffect( cb )`
+
+### Video 15
+### useEffect with dependency array
+`useEffect( cb, arr)`
+dependency array is used to control when useEffect is run. cb is run only if variable in arr is changed
