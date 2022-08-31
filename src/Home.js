@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import BlogList from './BlogList';
 
 const Home = () => {
@@ -12,6 +12,8 @@ const Home = () => {
         const newBlogs = blogs.filter((e)=>e.id!==id);
         setBlogs(newBlogs);
     }
+    useEffect( ()=>console.log('rendering') )
+
     return (
         <div className="home">
             <BlogList blogs={blogs} title='All blogs' handleDelete={handleDelete} />

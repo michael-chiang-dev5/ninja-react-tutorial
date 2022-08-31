@@ -62,4 +62,8 @@ Use the map function to display lists within component return
 
 ### Video 12 - filter
 
-### Video 13 - functions as rpops
+### Video 13 - functions as props
+
+### Video 14
+#### useEffect hook
+Runs a function every render of the componenet
