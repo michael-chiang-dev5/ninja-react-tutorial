@@ -70,6 +70,13 @@ Runs a function every render of the component
 `useEffect( cb )`
 
 ### Video 15
-### useEffect with dependency array
+#### useEffect with dependency array
 `useEffect( cb, arr)`
 dependency array is used to control when useEffect is run. cb is run only if variable in arr is changed
+
+### Video 16
+#### json server package
+Rather than code up a backend, just use npm package json-server as a toy model
+`npx json-server --watch data/db.json --port 8000`
+port 8000 should be different than app port (default 3000)
+json-server provides endpoints GET /blogs, GET /blogs/{id}, POST /blogs, DELETE /blogs/{id}
