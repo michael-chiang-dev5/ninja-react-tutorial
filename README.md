@@ -145,3 +145,8 @@ https://www.youtube.com/watch?v=aZGzwEjZrXc&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRi
 ### Video 24
 https://www.youtube.com/watch?v=aKOQtGLT-Yk&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=24
 * I had to remove strictmode to get things to work
+
+
+### Video 25 Route parameters
+https://www.youtube.com/watch?v=t7VmF4WsLCo&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=25
+* useParams() can be used to grab parameters from url
