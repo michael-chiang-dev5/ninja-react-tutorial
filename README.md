@@ -108,6 +108,24 @@ This is a "conditional template". If LHS is null, nothing happens. If LHS is not
 ### Video 18
 setTimeOut to simulate slow connection. Note that argument to setTimeout is anonymous function `setTimeOut( ()=> callback())`
 
-### Video 19
+### Video 19 - Catching errors
 `fetch().then().then().catch()`
-catch to catch errors (ie, cannot connect to API). This will not catch errors where server responds (wrong endpoint)
+* catch to catch errors (ie, cannot connect to API). This will not catch errors where server responds (wrong endpoint)
+* You can check `if (!res) throw Error(MESSAGE)` which will throw error to catch
+
+### Video 20 - Custom hook
+* custom hooks names must start with "use", for example `const useFetch = () => {}`.
+* remember to export hook 
+* hooks will usually return something
+  * you can use object destructuring to simplify things
+  `const {data: blogs, isPending, error} = useFetch('http://localhost:8000/blogs')`
+  Here you are taking key data and renaming it variable blogs
+
+### Video 21 
+https://www.youtube.com/watch?v=aZGzwEjZrXc&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=21
+* react router package
+  Install with `$ npm install react-router-dom@5` (@5 uses version 5, upgrade to 6 in a real website)
+  * Router lets you map url to different pages. Basically, your single-page-application has multi-page functionality.
+  * `<Router>` should encase the single page app
+  * Treat `<Switch>` and `<Route>` like case-switch; different paths get mapped to different components.
+
