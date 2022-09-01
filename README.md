@@ -78,5 +78,29 @@ dependency array is used to control when useEffect is run. cb is run only if var
 #### json server package
 Rather than code up a backend, just use npm package json-server as a toy model
 `npx json-server --watch data/db.json --port 8000`
-port 8000 should be different than app port (default 3000)
-json-server provides endpoints GET /blogs, GET /blogs/{id}, POST /blogs, DELETE /blogs/{id}
+* port 8000 should be different than app port (default 3000)
+* json-server provides endpoints GET /blogs, GET /blogs/{id}, POST /blogs, DELETE /blogs/{id}
+
+### Video 17
+#### API
+Data is now request through api.
+#### Notes
+* strict mode makes useEffect() run twice on page load 
+#### fetch
+* `fetch` is like http.request and returns a promise. We can't use async/awaitinside a callback? So we have to use `then`
+  Example:
+  ```javascript
+    useEffect( () => {
+        fetch('http://localhost:8000/blogs').then( (res)=> {
+            return res.json()
+        })
+        .then( (data)=> {
+            console.log(data)
+            setBlogs(data)
+        })
+    }, []);
+  ```
+  fetch is asynchronous, so we need then. response.json() is also asychronous so we need another then
+### working with nulls
+`{blogs && <BlogList blogs={blogs} />}`
+This is a "conditional template". If LHS is null, nothing happens. If LHS is not null, then RHS is evaluated which renders to screen.
