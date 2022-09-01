@@ -136,5 +136,12 @@ https://www.youtube.com/watch?v=aZGzwEjZrXc&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRi
   * `<Route exact path='/create'>` will match to url `/create` exactly
   * `<Route path='/create'>` will match to suburls such as `/`
   * use exact path if you want an exact match
+
+### Video 23
 * Link
   use `<Link to=url>` to go to react route without sending request to backend.
+
+
+### Video 24
+https://www.youtube.com/watch?v=aKOQtGLT-Yk&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=24
+* I had to remove strictmode to get things to work
