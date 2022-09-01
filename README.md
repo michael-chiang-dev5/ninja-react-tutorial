@@ -129,3 +129,12 @@ https://www.youtube.com/watch?v=aZGzwEjZrXc&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRi
   * `<Router>` should encase the single page app
   * Treat `<Switch>` and `<Route>` like case-switch; different paths get mapped to different components.
 
+
+### Video 22
+
+* Exact path
+  * `<Route exact path='/create'>` will match to url `/create` exactly
+  * `<Route path='/create'>` will match to suburls such as `/`
+  * use exact path if you want an exact match
+* Link
+  use `<Link to=url>` to go to react route without sending request to backend.
