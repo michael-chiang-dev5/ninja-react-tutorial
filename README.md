@@ -150,3 +150,7 @@ https://www.youtube.com/watch?v=aKOQtGLT-Yk&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRi
 ### Video 25 Route parameters
 https://www.youtube.com/watch?v=t7VmF4WsLCo&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=25
 * useParams() can be used to grab parameters from url
+e
+
+### Video 27 Forms
+Two way binding: use "onChange"
