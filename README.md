@@ -104,3 +104,10 @@ Data is now request through api.
 ### working with nulls
 `{blogs && <BlogList blogs={blogs} />}`
 This is a "conditional template". If LHS is null, nothing happens. If LHS is not null, then RHS is evaluated which renders to screen.
+
+### Video 18
+setTimeOut to simulate slow connection. Note that argument to setTimeout is anonymous function `setTimeOut( ()=> callback())`
+
+### Video 19
+`fetch().then().then().catch()`
+catch to catch errors (ie, cannot connect to API). This will not catch errors where server responds (wrong endpoint)
