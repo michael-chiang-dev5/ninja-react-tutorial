@@ -154,3 +154,8 @@ e
 
 ### Video 27 Forms
 Two way binding: use "onChange"
+
+### Video 28
+e.preventDefault() prevents page refersh on form submit
+
+### Video 29
