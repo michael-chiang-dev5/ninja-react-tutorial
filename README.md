@@ -158,4 +158,25 @@ Two way binding: use "onChange"
 ### Video 28
 e.preventDefault() prevents page refersh on form submit
 
-### Video 29
+### Video 29 
+https://www.youtube.com/watch?v=EcRFYF4B3IQ&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=29
+* To send a post request
+  ```javascript
+  fetch('http://localhost:8000/blogs', {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(blog)
+  }).then( ()=> {
+      console.log('new blog added')
+      setIsPending(false)
+  });
+  ```
+* You can quickly create objects
+  ```javascript
+  a = 1
+  b = 'asdf'
+  c = {a,b}
+  ```
+  c will be assigned to object `{a:1, b:'asdf'}`
+* remember you can use create conditional tags with &&
+`{!isPending && <button>Add blog</button> }`
