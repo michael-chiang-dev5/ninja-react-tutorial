@@ -180,3 +180,27 @@ https://www.youtube.com/watch?v=EcRFYF4B3IQ&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRi
   c will be assigned to object `{a:1, b:'asdf'}`
 * remember you can use create conditional tags with &&
 `{!isPending && <button>Add blog</button> }`
+
+
+### Video 30 useHistory hook
+The `useHistory` hook lets you redirect
+* Usage: 
+  ```javascript
+  import { useHistory } from "react-router-dom";`
+  const history = useHistory();
+  history.go(-1)
+  history.push('/')
+  ```
+    * `history.go(-1)` goes "backwards" one page
+    * `history.push('/')` redirects to '/'
+
+### Video 31
+Added delete blog button
+```javascript
+    const history = useHistory();
+    const handleClick = () => {
+        fetch(`http://localhost:8000/blogs/${id}`,
+        {method: 'DELETE'}
+        ).then(() => {history.push('/')})
+    };
+```
